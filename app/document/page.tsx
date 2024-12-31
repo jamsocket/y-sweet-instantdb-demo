@@ -11,13 +11,14 @@ import Link from "next/link";
 export default function DocumentHome() {
   const { user, error: authError } = db.useAuth();
 
+  console.log(user, authError)
   const router = useRouter();
 
   const { isLoading, data, error } = db.useQuery({
     docs: {},
   });
 
-  if (authError || user === null || !user) {
+  if (authError || !user) {
     return (
       <div className="text-red-400">Login or sign up to view documents.</div>
     );
@@ -51,7 +52,7 @@ export default function DocumentHome() {
               No documents found. Start by creating a new document!
             </p>
           )}
-          {!isLoading && data?.docs && data.docs.length === 0 && (
+          {!isLoading && data?.docs && data.docs.length > 0 && (
             <div>
               {data.docs.map((doc) => (
                 <Link

@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { YDocProvider } from "@y-sweet/react";
-import { usePathname } from "next/navigation";
 import SlateEditor from "../../../components/slate/SlateEditor";
 import { Button } from "../../../components/ui/button";
 import EditableDocTitle from "../../../components/document/editable-doc-title";
@@ -17,9 +16,8 @@ export type DocumentMetadata = {
   is_public: boolean;
 };
 
-export default function DocumentPage() {
-  const pathname = usePathname();
-  const docId = pathname.split("/").pop();
+export default function DocumentPage({ params }: { params: { id: string } }) {
+  const docId = params.id;
 
   const { isLoading, error, data } = db.useQuery({
     docs: {
