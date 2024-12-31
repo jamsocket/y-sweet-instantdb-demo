@@ -11,12 +11,15 @@ import Link from "next/link";
 export default function DocumentHome() {
   const { user, error: authError } = db.useAuth();
 
-  console.log(user, authError)
   const router = useRouter();
 
   const { isLoading, data, error } = db.useQuery({
     docs: {},
   });
+
+  if(isLoading) {
+    return <Loading />;
+  }
 
   if (authError || !user) {
     return (
@@ -45,7 +48,6 @@ export default function DocumentHome() {
       <div className="w-full">
         <h2 className="text-2xl font-bold mb-4 w-fit">Recent Documents</h2>
         <div className="flex flex-col gap-4">
-          {isLoading && <Loading />}
           {error && <div className="text-red-400">Unable to load docs.</div>}
           {!isLoading && data?.docs && data.docs.length === 0 && (
             <p className="text-gray-500">
