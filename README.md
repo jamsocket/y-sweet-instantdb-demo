@@ -11,15 +11,15 @@
 <a href="#introduction"><strong>Introduction</strong></a> ·
   <a href="#features"><strong>Features</strong></a> ·
   <a href="#how-it-works"><strong>How it works</strong></a> ·
-  <a href="#running-the-app"><strong>Running the app</strong></a> ·
+  <a href="#running-the-app"><strong>Running the app</strong></a>
 </p>
 <br/>
 
-## Introduction {#introduction}
+## Introduction
 
 The Jamsocket and InstantDB Starter Kit shows you how to implement core features of a real-time application like Google Docs. It covers collaborative text editing with Y-Sweet and document management with InstantDB.
 
-## Features {#features}
+## Features
 
 A full-fledged collaborative text editor with:
 
@@ -29,7 +29,7 @@ A full-fledged collaborative text editor with:
 - **Easy Persistence**: Managed document storage with Y-Sweet.
 - **Effortless Deployment**: Ready for local development or deployment to Netlify.
 
-## How InstantDB and Jamsocket work together {#how-it-works}
+## How InstantDB and Jamsocket work together
 
 Use [Y-Sweet](https://jamsocket.com/y-sweet), Jamsocket's Yjs server, for document collaboration.
 
@@ -39,7 +39,7 @@ Use [InstantDB](https://instantdb.com/) for document management.
 
 - InstantDB manages everything around the document, from document permissions to user authentication.
 
-## Running the app {#running-the-app}
+## Running the app
 
 1. Create a Y-Sweet service [via the Jamsocket dashboard](https://app.jamsocket.com)
 
