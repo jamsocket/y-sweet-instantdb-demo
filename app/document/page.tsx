@@ -17,7 +17,7 @@ export default function DocumentHome() {
     docs: {},
   });
 
-  if (authError || !user) {
+  if (authError || user === null || !user) {
     return (
       <div className="text-red-400">Login or sign up to view documents.</div>
     );
@@ -46,12 +46,12 @@ export default function DocumentHome() {
         <div className="flex flex-col gap-4">
           {isLoading && <Loading />}
           {error && <div className="text-red-400">Unable to load docs.</div>}
-          {!isLoading && data && data.docs && data.docs.length === 0 && (
+          {!isLoading && data?.docs && data.docs.length === 0 && (
             <p className="text-gray-500">
               No documents found. Start by creating a new document!
             </p>
           )}
-          {!isLoading && data && data.docs && data.docs.length > 0 && (
+          {!isLoading && data?.docs && data.docs.length === 0 && (
             <div>
               {data.docs.map((doc) => (
                 <Link
