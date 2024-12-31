@@ -81,3 +81,11 @@ Use [InstantDB](https://instantdb.com/) for document management.
    ```
 
    The starter kit should now be running on [localhost:3000](http://localhost:3000/).
+
+## Deploy to Netlify
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/extension/start/deploy?repository=https://github.com/jamsocket/y-sweet-instantdb-demo)
+
+The above will also clone the Starter kit to your GitHub, you can clone that locally and develop locally.
+
+Once you've added this project to Netlify, install the [Jamsocket](https://app.netlify.com/extensions/jamsocket) to add the necessary environment variables for your application.
