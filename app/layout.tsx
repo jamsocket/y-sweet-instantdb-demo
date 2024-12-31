@@ -36,7 +36,7 @@ export default function RootLayout({
                     <Link href={"/"}>Y-Sweet InstantDB Starter</Link>
                     <div className="flex items-center gap-4">
                       <Link
-                        href="https://app.netlify.com/start/deploy?repository=https://github.com/jamsocket/y-sweet-instant-demo"
+                        href="https://app.netlify.com/start/deploy?repository=https://github.com/jamsocket/y-sweet-instantdb-demo"
                         target="_blank"
                       >
                         <Image

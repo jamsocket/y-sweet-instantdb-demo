@@ -40,12 +40,25 @@ export default function Index() {
       </p>
       <div className="flex gap-4">
         {user ? (
-          <Button asChild size="sm">
-            <a href="/document">See Documents</a>
-          </Button>
+          <div className="flex flex-col justify-center gap-3">
+            <Button
+              asChild
+              size="sm"
+              className="hover:bg-gray-200 transition-all"
+            >
+              <a href="/document">See Documents</a>
+            </Button>
+            <p className="text-gray-700 text-sm">
+              Go to the documents page to begin collaborating.
+            </p>
+          </div>
         ) : (
           <div className="flex flex-col justify-center gap-3">
-            <Button asChild size="sm">
+            <Button
+              asChild
+              size="sm"
+              className="hover:bg-gray-200 transition-all"
+            >
               <a href="/sign-in">Sign up/in</a>
             </Button>
             <p className="text-gray-700 text-sm">
