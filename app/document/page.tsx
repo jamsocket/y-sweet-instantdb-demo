@@ -17,7 +17,7 @@ export default function DocumentHome() {
     docs: {},
   });
 
-  if(isLoading) {
+  if (isLoading) {
     return <Loading />;
   }
 
