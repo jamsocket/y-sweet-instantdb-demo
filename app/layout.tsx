@@ -11,7 +11,7 @@ export const metadata = {
   metadataBase: new URL(defaultUrl),
   title: "Y-Sweet and InstantDB Starter Kit",
   description:
-    "An epic collaborative text editor powered by Y-Sweet, InstantDB and Slate.",
+    "An epic collaborative document editor powered by Y-Sweet, InstantDB and Slate.",
 };
 
 export default function RootLayout({
