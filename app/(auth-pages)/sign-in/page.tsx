@@ -102,6 +102,7 @@ function MagicCode({ sentEmail }: MagicCodeProps) {
 
     if (error) {
       console.log(error);
+      setError("Invalid code. Please try again.");
       return;
     }
     router.push("/document");
