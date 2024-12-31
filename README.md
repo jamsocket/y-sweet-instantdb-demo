@@ -55,7 +55,7 @@ Use [InstantDB](https://instantdb.com/) for document management.
    git clone git@github.com:jamsocket/y-sweet-instantdb-demo.git
    ```
 
-4. Rename `.env.example` to `.env.local` and update the following:
+4. Rename `.env.example` to `.env` and update the following:
 
    ```
    Y_SWEET_CONNECTION_STRING=[INSERT Y_SWEET CONNECTION STRING]

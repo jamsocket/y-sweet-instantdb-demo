@@ -65,7 +65,7 @@ function Email({ setSentEmail }: EmailProps) {
       onSubmit={handleSubmit}
       className="flex flex-col items-center justify-center space-y-4 h-screen"
     >
-      <h2 className="text-gray-700 mb-5 text-lg font-semibold">
+      <h2 className="text-gray-300 mb-5 text-lg font-semibold">
         Sign in or sign up with just an email.
       </h2>
       <input
@@ -119,7 +119,7 @@ function MagicCode({ sentEmail }: MagicCodeProps) {
       onSubmit={handleSubmit}
       className="flex flex-col items-center justify-center space-y-4 h-screen"
     >
-      <h2 className="text-gray-700 mb-5 text-lg font-semibold">
+      <h2 className="text-gray-300 mb-5 text-lg font-semibold">
         Okay, we sent you an email! What was the code?
       </h2>
       <input

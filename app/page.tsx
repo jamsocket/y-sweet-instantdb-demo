@@ -1,7 +1,12 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Link from "next/link";
-export default async function Index() {
+import {db} from "./db";
+
+export default function Index() {
+  const { user } = db.useAuth();
+
   return (
     <div className="flex flex-col gap-16 pt-24 items-center bg-slate-300 text-black">
       <div className="flex gap-8 justify-center items-center">
@@ -34,9 +39,11 @@ export default async function Index() {
         The fastest way to build apps with InstantDB and Y-Sweet
       </p>
       <div className="flex gap-4">
-        <Button asChild size="sm">
+        {user ? <Button asChild size="sm">
           <a href="/document">See Documents</a>
-        </Button>
+        </Button> : <Button asChild size="sm">
+          <a href="/sign-in">Sign up/in</a>
+        </Button>}
       </div>
       <div className="w-full p-[1px] bg-gradient-to-r from-transparent via-foreground/10 to-transparent my-8" />
     </div>
