@@ -10,7 +10,7 @@
 <p align="center">
 <a href="#introduction"><strong>Introduction</strong></a> ·
   <a href="#features"><strong>Features</strong></a> ·
-  <a href="#how-it-works"><strong>How it works</strong></a> ·
+  <a href="#how-instantdb-and-jamsocket-work-together"><strong>How it works</strong></a> ·
   <a href="#running-the-app"><strong>Running the app</strong></a>
 </p>
 <br/>
