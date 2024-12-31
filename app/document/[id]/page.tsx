@@ -55,9 +55,9 @@ export default function DocumentPage({ params }: { params: { id: string } }) {
               docId={docId}
               setToolTipMessage={setToolTipMessage}
             />
-            <div className="flex gap-4 pt-6">
+            <div className="flex gap-2 pt-6">
               <CopyLink docId={docId} setToolTipMessage={setToolTipMessage} />
-              <button onClick={() => setIsModalOpen(false)}>Done</button>
+              <button className="hover:bg-gray-200 px-4 rounded-full"onClick={() => setIsModalOpen(false)}>Done</button>
               {toolTipMessage && (
                 <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-gray-800 text-white text-sm py-1 px-3 rounded shadow-lg">
                   {toolTipMessage}
