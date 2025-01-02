@@ -89,4 +89,4 @@ Use [InstantDB](https://instantdb.com/) for document management.
 
 The above will also clone the Starter kit to your GitHub, which you can use to develop locally.
 
-Once you've added this project to Netlify, install the [Jamsocket](https://app.netlify.com/extensions/jamsocket) to add the necessary environment variables for your application. You can also add the InstantDB environment variables using the Netlify UI. But make sure you add the database permissions (see Step 6) for the application to work correctly.
+Once you've added this project to Netlify, install the [Jamsocket](https://app.netlify.com/extensions/jamsocket) to add the necessary environment variables for your application. You can also add the InstantDB environment variables using the Netlify UI. But make sure you add the database permissions (see Step 6) with the InstantDB dashboard or CLI for the application to work correctly.
